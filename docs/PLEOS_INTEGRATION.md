@@ -29,6 +29,12 @@ Maven 저장소는 `https://nexus-playground.pleos.ai/repository/maven-releases/
 
 PLEOS Connect 에뮬레이터 이미지는 공개 Android 시스템 이미지가 아니므로 파트너 제공 이미지가 필요합니다. 현재 설치된 `LAB_EV_Demo` AVD는 UI·상태 흐름을 검증하는 Android Automotive 형태의 일반 에뮬레이터입니다.
 
+설치 시도 결과와 URL 수령 후 절차는 [PLEOS_EMULATOR_SETUP.md](PLEOS_EMULATOR_SETUP.md)에 정리했습니다.
+
+## SDK 버전 주의사항
+
+현재 프로젝트는 초기 공개 API 문서에 맞춰 Vehicle `2.0.3`, NaviHelper `2.0.3`으로 구현되어 있습니다. 최신 PLEOS Connect Emulator 개발환경 문서는 Vehicle `2.2.9`, NaviHelper `2.2.7`을 안내합니다. 전용 이미지 수령 후 이미지와 SDK의 대응 버전을 먼저 확인하고, 필요하면 adapter를 최신 API로 갱신해야 합니다.
+
 ## AI prompt guardrail
 
 실제 `generateContent()` 프롬프트에는 측정값·시간·Site·현장 메모를 구조화해 넣고 다음 제약을 유지합니다.
@@ -43,3 +49,5 @@ PLEOS Connect 에뮬레이터 이미지는 공개 Android 시스템 이미지가
 - [NaviHelper 첫 API 호출](https://document.pleos.ai/en/api-reference/connect-sdk-pleos/NaviHelper/make-the-first-api-call)
 - [LLM SDK 소개](https://document.pleos.ai/api-reference/connect-sdk-pleos/LLM/intro)
 - [LLM 첫 API 호출](https://pleos.ai/playground/resources/api-reference/connect-sdk/LLM/make-the-first-api-call)
+- [PLEOS Connect Emulator 설치](https://document.pleos.ai/docs/connect/guide/getting-started/application-development/setup-connect-sdk-emulator)
+- [PLEOS 개발환경 요구사항](https://document.pleos.ai/docs/connect/guide/getting-started/application-development/setup-application-development-environment)

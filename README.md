@@ -97,13 +97,19 @@ PLEOS 전용 variant 빌드:
 | Environment Sensor | USB/BLE 장비 연결 전 mock stream 사용 |
 | Gleo AI | Playground 사용 승인 전 deterministic fallback 사용 |
 
-PLEOS Connect 전용 시스템 이미지와 앱 권한 연결이 준비되기 전에는 `demoDebug`를 사용합니다. 인증 정보와 Playground 비밀키는 저장소에 포함하지 않습니다.
+PLEOS Connect 전용 시스템 이미지와 앱 권한 연결이 준비되기 전에는 `demoDebug`를 사용합니다. `pleosDebug`는 빌드까지 검증됐지만 일반 Google AVD에는 PLEOS Navi Service와 VHAL이 없어 실제 SDK 동작을 검증할 수 없습니다. 인증 정보와 Playground 비밀키는 저장소에 포함하지 않습니다.
 
-상세 내용은 [PLEOS 연동 문서](docs/PLEOS_INTEGRATION.md)를 참고하세요.
+상세 내용:
+
+- [PLEOS SDK 연동 구조](docs/PLEOS_INTEGRATION.md)
+- [PLEOS Connect Emulator 설치 상태와 후속 절차](docs/PLEOS_EMULATOR_SETUP.md)
+- [90초 발표 데모 대본](docs/DEMO_SCRIPT.md)
 
 ## 검증 환경
 
 - Automotive landscape AVD: `LAB_EV_Demo`
 - Android 16 / API 36 / Google APIs x86_64
+- Android SDK Platform 34 설치 완료
 - 화면 크기: 1080 × 600
 - 다섯 화면 전환, 센서 stream, 분석, 보고서 생성, 초기화 검증
+- PLEOS Connect system image는 파트너 제공 URL 수령 후 설치 예정
