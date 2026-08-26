@@ -103,7 +103,6 @@ PLEOS Connect 전용 시스템 이미지와 앱 권한 연결이 준비되기 �
 
 - [PLEOS SDK 연동 구조](docs/PLEOS_INTEGRATION.md)
 - [PLEOS Connect Emulator 설치 상태와 후속 절차](docs/PLEOS_EMULATOR_SETUP.md)
-- [90초 발표 데모 대본](docs/DEMO_SCRIPT.md)
 
 ## 검증 환경
 
